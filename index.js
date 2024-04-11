@@ -1,8 +1,10 @@
 const express = require('express');
 const axios = require('axios');
+require('dotenv').config();
+
 
 const app = express();
-const PORT = 6000;
+const PORT = process.env.PORT;
 
 app.get('/sum', async (req, res) => {
   try {
