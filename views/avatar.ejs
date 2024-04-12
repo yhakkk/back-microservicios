@@ -1,0 +1,15 @@
+<!-- views/hola.ejs -->
+<html>
+<head>
+    <title>Rick y Morty </title>
+</head>
+<body>
+    <h1>Datos del Personaje</h1>
+    <h2>Nombre: <%= character.name %></h2>
+    <p>Especie: <%= character.species %></p>
+    <p>Genero: <%= character.gender %></p>
+    <p>Localidad: <%= character.location.name %></p>
+    <p>Estado: <%= character.status %></p>
+    <img src="<%= character.image %>" alt="">
+</body>
+</html>
